@@ -4,7 +4,7 @@ using AvaloniaSwitch.Extensions.Boollean;
 
 namespace AvaloniaSwitch.Extensions.Boolean;
 
-public sealed class SwitchExtensions : MarkupExtension
+public sealed class SwitchExtension : MarkupExtension
 {
     public object? True { get; set; }
 

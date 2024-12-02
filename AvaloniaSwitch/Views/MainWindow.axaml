@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:string="clr-namespace:AvaloniaSwitch.Extensions.String"
+        xmlns:bool="clr-namespace:AvaloniaSwitch.Extensions.Boolean"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AvaloniaSwitch.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
@@ -27,7 +28,12 @@
                      Name="SearchTextBox"
                      Width="150" />
             <Button Content="{Binding #SearchTextBox.Text,Converter={string:IsNullOrWhiteSpace True='添加',False='搜索'}}"
-                    Padding="30,5" />
+                    Padding="30,5" 
+                    Command="{Binding StartCommand}"/>
         </StackPanel>
+        <TextBlock Text="品玩12月2日讯，据The Elec 报道，电 3nm 工艺技术生产M5 系列芯片。"
+                   TextWrapping="WrapWithOverflow"
+                   Foreground="{Binding IsError,
+                   Converter={bool:Switch True={x:Static Brushes.Red},False={x:Static Brushes.Green}}}" />
     </StackPanel>
 </Window>
