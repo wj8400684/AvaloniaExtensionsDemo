@@ -12,7 +12,7 @@ public class IsNullOrWhiteSpaceDisplayCvt : MarkupValueCvt<IsNullOrWhiteSpaceDis
     public override object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
     {
         if (value == null)
-            return False;
+            return True;
 
         return string.IsNullOrWhiteSpace(value.ToString()) ? True : False;
     }
