@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace AvaloniaSwitch.Extensions.String;
+namespace AvaloniaSwitch.Extensions;
 
 public class IsNullOrWhiteSpaceDisplayCvt : MarkupValueCvt<IsNullOrWhiteSpaceDisplayCvt>
 {

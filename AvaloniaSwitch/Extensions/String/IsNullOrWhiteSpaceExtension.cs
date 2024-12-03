@@ -1,7 +1,7 @@
 using System;
 using Avalonia.Markup.Xaml;
 
-namespace AvaloniaSwitch.Extensions.String;
+namespace AvaloniaSwitch.Extensions;
 
 public class IsNullOrWhiteSpaceExtension : MarkupExtension
 {

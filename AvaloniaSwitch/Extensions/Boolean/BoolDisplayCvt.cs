@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace AvaloniaSwitch.Extensions.Boollean;
+namespace AvaloniaSwitch.Extensions;
 
 public class BoolDisplayCvt : MarkupValueCvt<BoolDisplayCvt>
 {

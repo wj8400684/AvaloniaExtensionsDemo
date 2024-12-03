@@ -1,8 +1,7 @@
 using System;
 using Avalonia.Markup.Xaml;
-using AvaloniaSwitch.Extensions.Boollean;
 
-namespace AvaloniaSwitch.Extensions.Boolean;
+namespace AvaloniaSwitch.Extensions;
 
 public sealed class SwitchExtension : MarkupExtension
 {
